@@ -1,27 +1,43 @@
+
 export function Footer() {
   return (
-    <footer className="shadow-[0_0_10px] fixed bottom-0 w-full h-16 bg-[linear-gradient(-20deg,#274DF5,#27EEF5,#076969)] bg-[length:200%_200%] animate-[gradient_2s_ease_infinite">
+    <footer className="
+      fixed bottom-0 w-full h-16
+      shadow-[0_0_10px]
+      bg-[linear-gradient(-20deg,#274DF5,#27EEF5,#076969)]
+      bg-[length:200%_200%]
+      animate-[gradient_2s_ease_infinite]
+    ">
       <div className="
-        max-w-6xl
-        mx-auto
-        flex
-        flex-col
+        max-w-6xl mx-auto
+        h-full
+        px-4
+        flex flex-col
+        justify-center
         items-center
-        gap-2
         text-center
+        gap-1
+
         sm:flex-row
         sm:justify-between
+        sm:gap-0
+        sm:text-sm
+
+        md:px-6
+        md:text-base
+
+        lg:px-8
+        lg:text-lg
       ">
-<div className="text-white mt-5 flex">
-        <p className="text-sm sm:text-base">
+        <p className="text-white">
           © 2026 Kirby Tajanlangit
         </p>
 
-        <p className="ml-150 text-sm sm:text-base">
+        <p className="text-white">
           BSIT 3-D | Cordova Public College
         </p>
-</div>
       </div>
     </footer>
   )
 }
+
