@@ -5,7 +5,7 @@ export function ContactSection(){
     return( 
         <> 
         <div className="flex justify-center mt-4 ">
-        <div className="shadow-[0_0_30px] rounded-lg w-full max-w-[500px] h-[560px] flex justify-center
+        <div className="contact-an  shadow-[0_0_30px] rounded-lg w-full max-w-[500px] h-[560px] flex justify-center
         sm:max-w-[630px]">
             <div className="flex flex-col gap-10"> 
             <h1 className=" text-3xl
