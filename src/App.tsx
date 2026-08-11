@@ -1,7 +1,7 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Home from "@src/components/pages/home";
-import About from "@src/components/pages/about";
-import Contact from "@src/components/pages/contact"
+import Home from "@/components/pages/home";
+import About from "@/components/pages/about";
+import Contact from "@/components/pages/contact"
 
 export default function App(){ 
   const routes = [ 

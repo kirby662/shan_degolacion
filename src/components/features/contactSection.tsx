@@ -1,4 +1,4 @@
-import { SubmitButton } from "@src/assets/submitbutton"
+import { SubmitButton } from "@/assets/submitbutton"
 
 export function ContactSection(){ 
     const input = "shadow-[0_0_15px] pl-2 border border-gray-300 p-2 rounded-md w-100 outline-none focus:ring-2 focus:ring-blue-400"

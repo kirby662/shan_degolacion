@@ -1,6 +1,6 @@
-import { ContactSection } from "@src/components/features/contactSection";
-import { Navbar } from "@src/components/common/navbar";
-import { Footer } from "@src/components/common/footer";
+import { ContactSection } from "@/components/features/contactSection";
+import { Navbar } from "@/components/common/navbar";
+import { Footer } from "@/components/common/footer";
 
 export default function Contact(){ 
     return( 
