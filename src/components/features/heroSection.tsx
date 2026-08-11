@@ -29,18 +29,20 @@ export  function HomeSectiom() {
  <div className=" 
  appear
   relative
-  w-[450px]
+  w-[400px]
   sm:w-[550px]
   md:w-[700px]
   lg:w-[900px]
-  h-[630px]
+  h-[720px]
   sm:h-[570px]
   md:h-[500px
   lg:h-[500px]
-  border-2
+  sm:border-2
+  border-0
   border-gray-300
   rounded-xl
-  shadow-2xl
+  sm:shadow-2xl
+  shadow-0
   shadow-gray-800
 ">
 
@@ -98,7 +100,7 @@ href="https://www.tiktok.com/@kirbytajanlangit">
 
 
 </div>
-<div className="ml-78 mt-6 sm:mt-0 sm:ml-100 md:-mt-2 md:ml-130 lg:mt-0 lg:ml-170 ">
+<div className="ml-20 mt-18  sm:mt-0 sm:ml-100 md:-mt-2 md:ml-130 lg:mt-0 lg:ml-170 ">
   <Button onClick={buttonAbt} color="bg-gradient-to-r from-blue-300 to-blue-450 " buttontext="About Me"/>
 </div>
 

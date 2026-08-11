@@ -19,11 +19,13 @@ export  function AboutSection() {
          w-full     
           max-w-[900px]
           mx-auto
-          border-2
-          border-gray-300
+           border-0
+          sm:border-2 
+          sm:border-gray-300
           rounded-xl
-          shadow-2xl
-          shadow-gray-800
+          sm:shadow-2xl
+          shadow-0
+          sm:shadow-gray-800
           p-6
           sm:p-8
           md:p-10

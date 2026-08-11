@@ -6,7 +6,7 @@ interface Props {
 
 export function Button({color,buttontext,onClick}:Props){ 
 return( 
-    <button className={`w-20 h-10 rounded-md 
+    <button className={`sm:w-20 w-30 h-10 rounded-md 
         hover:shadow-[2px_7px_20px] 
         hover:bg-blue-500
         transition 
