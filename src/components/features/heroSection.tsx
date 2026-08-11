@@ -25,8 +25,8 @@ export  function HomeSectiom() {
 
   
 
-<div className="flex justify-center mt-20 md:ml-3 ">
- <div className="
+<div className="flex justify-center mt-20 md:ml-3 pb-20 ">
+ <div className=" 
  appear
   relative
   w-[450px]
@@ -35,7 +35,7 @@ export  function HomeSectiom() {
   lg:w-[900px]
   h-[630px]
   sm:h-[570px]
-  md:h-[500px]
+  md:h-[500px
   lg:h-[500px]
   border-2
   border-gray-300

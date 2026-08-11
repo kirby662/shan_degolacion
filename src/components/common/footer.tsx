@@ -2,6 +2,7 @@
 export function Footer() {
   return (
     <footer className="
+    mt-20
       fixed bottom-0 w-full h-16
       shadow-[0_0_10px]
       bg-[linear-gradient(-20deg,#274DF5,#27EEF5,#076969)]
