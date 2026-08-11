@@ -1,6 +1,6 @@
-import { AboutSection } from "@src/components/features/aboutSection";
-import { Navbar } from "@src/components/common/navbar";
-import {Footer} from "@src/components/common/footer"
+import { AboutSection } from "@/components/features/aboutSection";
+import { Navbar } from "@/components/common/navbar";
+import {Footer} from "@/components/common/footer"
 
 export default function Home(){ 
   return( 

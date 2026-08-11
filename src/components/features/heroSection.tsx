@@ -2,7 +2,7 @@ import pf from "@src/components/images/pf.jpeg"
 import instagram from "@src/components/images/instagram.svg"
 import facebook from "@src/components/images/facebook.webp"
 import tiktok from "@src/components/images/tiktok.png"
-import { Button } from "@src/assets/button"
+import { Button } from "@/assets/button"
 
 export  function HomeSectiom() {
   const imgdesign= `mt-1 text-5xl 
