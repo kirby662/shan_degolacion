@@ -1,7 +1,7 @@
-import pf from "@src/components/images/pf.jpeg"
-import instagram from "@src/components/images/instagram.svg"
-import facebook from "@src/components/images/facebook.webp"
-import tiktok from "@src/components/images/tiktok.png"
+import pf from "@/components/images/pf.jpeg"
+import instagram from "@/components/images/instagram.svg"
+import facebook from "@/components/images/facebook.webp"
+import tiktok from "@/components/images/tiktok.png"
 import { Button } from "@/assets/button"
 
 export  function HomeSectiom() {
