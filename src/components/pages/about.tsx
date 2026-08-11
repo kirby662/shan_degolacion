@@ -1,0 +1,13 @@
+import { AboutSection } from "@src/components/features/aboutSection";
+import { Navbar } from "@src/components/common/navbar";
+import {Footer} from "@src/components/common/footer"
+
+export default function Home(){ 
+  return( 
+    <> 
+    <Navbar />
+    <AboutSection /> 
+    <Footer />
+    </>
+  )
+}
