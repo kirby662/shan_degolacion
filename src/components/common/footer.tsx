@@ -8,22 +8,20 @@ export function Footer() {
       w-full
       min-h-16
 
-      bg-gradient-to-r
-      from-blue-700
-      via-blue-500
-      to-cyan-500
+      bg-slate-950/95
+      backdrop-blur-lg
 
-      bg-[length:200%_200%]
-      animate-[gradient_4s_ease_infinite]
+      border-t
+      border-white/10
 
-      shadow-[0_-4px_25px_rgba(37,99,235,0.35)]
+      shadow-[0_-4px_30px_rgba(168,85,247,0.2)]
 
       px-4
       py-3
     ">
 
       <div className="
-        max-w-[1200px]
+        max-w-[1150px]
         mx-auto
         min-h-10
 
@@ -31,6 +29,7 @@ export function Footer() {
         flex-col
         justify-center
         items-center
+
         text-center
         gap-1
 
@@ -40,23 +39,25 @@ export function Footer() {
       ">
 
         <p className="
-          text-white
+          text-slate-300
           text-xs
           sm:text-sm
           md:text-base
           font-medium
         ">
-          © 2026 Angel Rose Pogoy
+          © 2026 Erica
         </p>
 
         <p className="
-          text-white
+          text-slate-400
           text-xs
           sm:text-sm
           md:text-base
           font-medium
         ">
-          BSIT 3-D | Cordova Public College
+          BSIT 3-D
+          <span className="text-fuchsia-400 mx-2">|</span>
+          Cordova Public College
         </p>
 
       </div>

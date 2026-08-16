@@ -9,265 +9,369 @@ export function AboutSection() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="
+      min-h-screen
+      bg-slate-950
+      px-4
+      py-16
+      sm:px-8
+      overflow-hidden
+    ">
 
       <main className="
-        flex-1
-        px-4
-        sm:px-8
-        md:px-12
-        py-16
-        pb-24
+        relative
+        max-w-[1150px]
+        mx-auto
       ">
+
+        {/* Background Decorations */}
+
+        <div className="
+          absolute
+          -top-40
+          -right-40
+          w-[450px]
+          h-[450px]
+          rounded-full
+          bg-fuchsia-600/20
+          blur-3xl
+        " />
+
+        <div className="
+          absolute
+          -bottom-40
+          -left-40
+          w-[500px]
+          h-[500px]
+          rounded-full
+          bg-blue-600/20
+          blur-3xl
+        " />
+
+        {/* Main Container */}
 
         <div className="
           relative
-          w-full
-          max-w-[1000px]
-          mx-auto
+          z-10
           overflow-hidden
-          rounded-3xl
-          bg-gradient-to-br
-          from-white
-          via-blue-50
-          to-cyan-50
+          rounded-[2rem]
           border
-          border-blue-200
-          shadow-[0_20px_60px_rgba(37,99,235,0.15)]
-          p-6
-          sm:p-10
-          md:p-14
+          border-white/10
+          bg-gradient-to-br
+          from-slate-900
+          via-purple-950
+          to-slate-950
+          shadow-[0_25px_100px_rgba(139,92,246,0.2)]
         ">
 
           <div className="
-            absolute
-            -top-24
-            -right-24
-            w-64
-            h-64
-            rounded-full
-            bg-blue-300/20
-            blur-3xl
-          " />
+            p-6
+            sm:p-10
+            lg:p-14
+          ">
 
-          <div className="
-            absolute
-            -bottom-32
-            -left-32
-            w-80
-            h-80
-            rounded-full
-            bg-cyan-300/20
-            blur-3xl
-          " />
+            {/* HEADER */}
 
-          <div className="relative z-10">
+            <div className="
+              flex
+              flex-col
+              lg:flex-row
+              lg:items-end
+              lg:justify-between
+              gap-6
+            ">
 
-            <div className="text-center">
+              <div>
 
-              <p className="
-                text-sm
-                font-semibold
-                uppercase
-                tracking-[0.3em]
-                text-blue-500
-                mb-2
-              ">
-                Get to know me
-              </p>
+                <p className="
+                  text-sm
+                  font-semibold
+                  uppercase
+                  tracking-[0.3em]
+                  text-fuchsia-400
+                ">
+                  Get to know me
+                </p>
 
-              <h1 className="
-                text-4xl
-                sm:text-5xl
-                font-extrabold
-                bg-gradient-to-r
-                from-blue-700
-                via-blue-500
-                to-cyan-500
-                bg-clip-text
-                text-transparent
-                blink
-                drop-shadow-[0_0_8px_rgba(59,130,246,0.25)]
-              ">
-                ABOUT ME
-              </h1>
+                <h1 className="
+                  mt-3
+                  text-5xl
+                  sm:text-6xl
+                  font-black
+                  bg-gradient-to-r
+                  from-fuchsia-400
+                  via-purple-400
+                  to-blue-400
+                  bg-clip-text
+                  text-transparent
+                ">
+                  ABOUT ME
+                </h1>
+
+              </div>
 
               <div className="
-                w-20
                 h-1
-                mx-auto
-                mt-4
+                w-24
                 rounded-full
                 bg-gradient-to-r
-                from-blue-500
-                to-cyan-400
+                from-fuchsia-500
+                to-blue-500
+                lg:mb-3
               " />
 
             </div>
 
+
+            {/* INTRODUCTION */}
+
             <div className="
-              mt-10
+              mt-12
               grid
               grid-cols-1
-              md:grid-cols-2
+              lg:grid-cols-[1.2fr_0.8fr]
               gap-8
             ">
 
+              {/* WHO I AM */}
+
               <div className="
-                bg-white/70
-                backdrop-blur-sm
-                rounded-2xl
-                p-6
+                rounded-3xl
+                bg-white/[0.04]
                 border
-                border-blue-100
-                shadow-sm
-                hover:shadow-lg
+                border-white/10
+                p-7
+                sm:p-9
+                backdrop-blur-md
+                hover:border-fuchsia-400/30
                 hover:-translate-y-1
                 transition-all
                 duration-300
               ">
 
-                <h2 className="
-                  text-xl
-                  sm:text-2xl
-                  font-bold
-                  text-blue-700
-                  mb-4
+                <div className="
+                  flex
+                  items-center
+                  gap-3
+                  mb-6
                 ">
-                  Who I Am
-                </h2>
+
+                  <div className="
+                    w-10
+                    h-10
+                    flex
+                    items-center
+                    justify-center
+                    rounded-xl
+                    bg-fuchsia-500/10
+                    border
+                    border-fuchsia-400/20
+                    text-fuchsia-400
+                    font-bold
+                  ">
+                    01
+                  </div>
+
+                  <h2 className="
+                    text-2xl
+                    sm:text-3xl
+                    font-bold
+                    text-white
+                  ">
+                    Who I Am
+                  </h2>
+
+                </div>
 
                 <p className="
                   text-base
                   sm:text-lg
-                  leading-relaxed
-                  text-slate-600
+                  leading-8
+                  text-slate-300
                 ">
-                  Hello! My name is <b className="text-blue-700">
-                    Angel Rose Pogoy
-                  </b>. I am a <b className="text-blue-700">
+                  Hello! My name is{" "}
+                  <b className="text-fuchsia-400">
+                    Erica
+                  </b>
+                  . I am a{" "}
+                  <b className="text-purple-400">
                     BSIT student
-                  </b> from <b className="text-blue-700">
+                  </b>
+                  {" "}at{" "}
+                  <b className="text-blue-400">
                     Cordova Public College
                   </b>.
                 </p>
 
                 <p className="
-                  mt-4
+                  mt-5
                   text-base
                   sm:text-lg
-                  leading-relaxed
-                  text-slate-600
+                  leading-8
+                  text-slate-400
                 ">
-                  I am currently learning web development and exploring
-                  different technologies that can help me become a better
-                  programmer and developer.
+                  I enjoy learning about technology and creating
+                  simple, useful, and creative web projects. I am
+                  continuously improving my skills through practice
+                  and new projects.
+
                 </p>
 
               </div>
 
+
+              {/* CURRENT FOCUS */}
+
               <div className="
+                rounded-3xl
+                p-7
+                sm:p-9
                 bg-gradient-to-br
-                from-blue-600
-                to-cyan-500
-                rounded-2xl
-                p-6
-                text-white
-                shadow-lg
-                shadow-blue-500/20
+                from-fuchsia-600
+                via-purple-600
+                to-blue-600
+                shadow-[0_20px_50px_rgba(139,92,246,0.25)]
                 hover:-translate-y-1
-                hover:shadow-blue-500/40
                 transition-all
                 duration-300
               ">
 
-                <h2 className="
-                  text-xl
-                  sm:text-2xl
-                  font-bold
-                  mb-4
+                <div className="
+                  flex
+                  items-center
+                  gap-3
+                  mb-6
                 ">
-                  What I Am Learning
-                </h2>
+
+                  <div className="
+                    w-10
+                    h-10
+                    flex
+                    items-center
+                    justify-center
+                    rounded-xl
+                    bg-white/10
+                    border
+                    border-white/20
+                    text-white
+                    font-bold
+                  ">
+                    02
+                  </div>
+
+                  <h2 className="
+                    text-2xl
+                    sm:text-3xl
+                    font-bold
+                    text-white
+                  ">
+                    What I Do
+                  </h2>
+
+                </div>
 
                 <p className="
                   text-base
                   sm:text-lg
-                  leading-relaxed
-                  text-blue-50
+                  leading-8
+                  text-purple-50
                 ">
-                  I am learning technologies such as React, TypeScript,
-                  and Tailwind CSS. I created this portfolio to practice
-                  my skills and show the projects and knowledge I have
-                  developed as a student.
+                  I am currently focused on improving my web
+                  development skills. I work with React, TypeScript,
+                  Tailwind CSS, and other technologies while building
+                  projects for school and personal practice.
                 </p>
 
               </div>
 
             </div>
 
-            <div className="mt-12">
 
-              <div className="flex items-center gap-4">
+            {/* SKILLS */}
 
-                <h2 className="
-                  text-2xl
-                  sm:text-3xl
-                  font-bold
-                  text-blue-700
-                ">
-                  My Skills
-                </h2>
+            <div className="mt-14">
+
+              <div className="
+                flex
+                items-center
+                gap-4
+              ">
+
+                <div>
+
+                  <p className="
+                    text-sm
+                    uppercase
+                    tracking-widest
+                    text-fuchsia-400
+                    font-semibold
+                  ">
+                    Technologies
+                  </p>
+
+                  <h2 className="
+                    mt-1
+                    text-3xl
+                    sm:text-4xl
+                    font-bold
+                    text-white
+                  ">
+                    My Skills
+                  </h2>
+
+                </div>
 
                 <div className="
                   flex-1
                   h-px
                   bg-gradient-to-r
-                  from-blue-300
+                  from-fuchsia-500/60
                   to-transparent
                 " />
 
               </div>
 
+
               <div className="
-                mt-6
+                mt-7
                 grid
                 grid-cols-2
                 sm:grid-cols-3
-                md:grid-cols-5
+                lg:grid-cols-5
                 gap-4
               ">
 
                 {skills.map((s, index) => (
 
-                  <span
+                  <div
                     key={index}
                     className="
+                      min-h-16
                       flex
                       items-center
                       justify-center
-                      min-h-14
+                      rounded-2xl
+                      bg-white/[0.04]
+                      border
+                      border-white/10
                       px-4
                       py-3
                       text-center
                       font-semibold
-                      text-blue-700
-                      bg-blue-100
-                      border
-                      border-blue-200
-                      rounded-xl
-                      shadow-sm
-                      hover:bg-blue-600
+                      text-slate-200
+                      hover:bg-gradient-to-br
+                      hover:from-fuchsia-600
+                      hover:to-purple-600
                       hover:text-white
+                      hover:border-transparent
                       hover:-translate-y-2
-                      hover:shadow-[0_10px_25px_rgba(37,99,235,0.35)]
-                      cursor-pointer
+                      hover:shadow-[0_15px_30px_rgba(168,85,247,0.3)]
                       transition-all
                       duration-300
                     "
                   >
                     {s.skills}
-                  </span>
+                  </div>
 
                 ))}
 
@@ -275,39 +379,70 @@ export function AboutSection() {
 
             </div>
 
+
+            {/* GOAL */}
+
             <div className="
-              mt-12
-              p-6
-              sm:p-8
-              rounded-2xl
-              bg-gradient-to-r
-              from-blue-50
-              to-cyan-50
+              mt-14
+              rounded-3xl
               border
-              border-blue-200
+              border-white/10
+              bg-white/[0.03]
+              p-7
+              sm:p-10
+              relative
+              overflow-hidden
             ">
 
-              <h2 className="
-                text-2xl
-                sm:text-3xl
-                font-bold
-                text-blue-700
-              ">
-                My Goal
-              </h2>
+              <div className="
+                absolute
+                -right-20
+                -top-20
+                w-48
+                h-48
+                rounded-full
+                bg-fuchsia-500/10
+                blur-3xl
+              " />
 
-              <p className="
-                mt-4
-                text-base
-                sm:text-lg
-                leading-relaxed
-                text-slate-600
-              ">
-                My goal is to improve my programming skills, learn more
-                about web development, and create useful and creative
-                projects in the future. I also want to continue learning
-                new technologies and become a confident developer.
-              </p>
+              <div className="relative z-10">
+
+                <p className="
+                  text-sm
+                  uppercase
+                  tracking-widest
+                  text-blue-400
+                  font-semibold
+                ">
+                  Looking Ahead
+                </p>
+
+                <h2 className="
+                  mt-2
+                  text-3xl
+                  sm:text-4xl
+                  font-bold
+                  text-white
+                ">
+                  My Goal
+                </h2>
+
+                <p className="
+                  mt-5
+                  max-w-4xl
+                  text-base
+                  sm:text-lg
+                  leading-8
+                  text-slate-400
+                ">
+                  My goal is to become a better developer by continuing
+                  to practice, explore new technologies, and build
+                  meaningful projects. I want to strengthen my
+                  programming skills and gain more experience in
+                  creating modern and user-friendly websites.
+                </p>
+
+              </div>
 
             </div>
 

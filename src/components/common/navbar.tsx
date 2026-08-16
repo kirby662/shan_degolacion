@@ -6,21 +6,22 @@ export function Navbar() {
     relative
     px-4
     py-2
+
     text-white
-    text-base
-    sm:text-lg
+    text-sm
+    sm:text-base
     font-semibold
-    rounded-lg
 
-    hover:bg-white/20
-    hover:text-white
+    rounded-full
 
-    hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]
+    hover:bg-white/10
+    hover:text-fuchsia-300
+    hover:-translate-y-1
+
+    hover:shadow-[0_0_20px_rgba(217,70,239,0.5)]
 
     transition-all
     duration-300
-
-    hover:-translate-y-1
   `
 
   const links = [
@@ -30,77 +31,87 @@ export function Navbar() {
   ]
 
   return (
-    <>
+    <nav className="
+      sticky
+      top-0
+      z-50
+      w-full
+      h-16
+
+      bg-slate-950/90
+      backdrop-blur-lg
+
+      border-b
+      border-white/10
+
+      shadow-[0_4px_30px_rgba(0,0,0,0.3)]
+    ">
+
       <div className="
-        sticky
-        top-0
-        z-50
-        w-full
-        h-16
+        h-full
+        max-w-[1150px]
+        mx-auto
+        px-4
+        sm:px-8
 
-        bg-gradient-to-r
-        from-blue-700
-        via-blue-500
-        to-cyan-500
-
-        bg-[length:200%_200%]
-        animate-[gradient_4s_ease_infinite]
-
-        shadow-[0_4px_25px_rgba(37,99,235,0.35)]
+        flex
+        items-center
+        justify-between
       ">
 
-        <div className="
-          h-full
-          max-w-[1200px]
-          mx-auto
-          px-4
-          sm:px-8
+        {/* Logo */}
 
+        <Link
+          to="/"
+          className="
+            text-white
+            text-xl
+            sm:text-2xl
+            font-extrabold
+            tracking-wide
+
+            bg-gradient-to-r
+            from-fuchsia-400
+            via-purple-400
+            to-blue-400
+
+            bg-clip-text
+            text-transparent
+
+            hover:scale-105
+            transition-all
+            duration-300
+          "
+        >
+          Erica
+        </Link>
+
+
+        {/* Navigation */}
+
+        <div className="
           flex
           items-center
-          justify-between
+          gap-1
+          sm:gap-3
         ">
 
-          <Link
-            to="/"
-            className="
-              text-white
-              text-xl
-              sm:text-2xl
-              font-extrabold
-              tracking-wide
-              hover:text-cyan-100
-              transition-all
-              duration-300
-            "
-          >
-            Angel Rose
-          </Link>
+          {links.map((link) => (
 
-          <div className="
-            flex
-            items-center
-            gap-2
-            sm:gap-5
-          ">
+            <Link
+              key={link.path}
+              to={link.path}
+              className={linkStyle}
+            >
+              {link.name}
+            </Link>
 
-            {links.map((l) => (
-
-              <Link
-                key={l.path}
-                to={l.path}
-                className={linkStyle}
-              >
-                {l.name}
-              </Link>
-
-            ))}
-
-          </div>
+          ))}
 
         </div>
 
       </div>
-    </>
+
+    </nav>
   )
 }
