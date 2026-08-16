@@ -1,17 +1,42 @@
-interface Props { 
-    buttontext:string
+interface Props {
+  buttontext: string
 }
 
-export function SubmitButton({buttontext}:Props){ 
-    return( 
-        <button type="submit" className=" w-40 sm:w-20 h-10 rounded-md 
-        hover:shadow-[2px_7px_20px] 
-        hover:bg-blue-500
-        transition 
-        duration-200 
-        cursor-pointer 
-        hover:-translate-y-2 
-        shadow-[0_4px_15px] 
-        bg-gradient-to-r from-blue-300 to-blue-450 sm:ml-45 -ml-3"> {buttontext}</button>
-    )
+export function SubmitButton({ buttontext }: Props) {
+  return (
+    <button
+      type="submit"
+      className="
+        w-full
+        sm:w-40
+        h-11
+        px-6
+        rounded-xl
+
+        font-semibold
+        text-white
+
+        bg-gradient-to-r
+        from-blue-600
+        to-cyan-500
+
+        shadow-[0_6px_20px_rgba(37,99,235,0.3)]
+
+        hover:from-blue-700
+        hover:to-cyan-600
+
+        hover:-translate-y-1
+        hover:shadow-[0_10px_25px_rgba(37,99,235,0.45)]
+
+        active:translate-y-0
+
+        transition-all
+        duration-300
+
+        cursor-pointer
+      "
+    >
+      {buttontext}
+    </button>
+  )
 }

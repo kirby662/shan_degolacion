@@ -1,33 +1,106 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom"
 
-export function Navbar(){ 
-    const linkStyle = " w-18 hover:bg-blue-500 hover:rounded hover:w-20 shadow-lg shadow-gray-500/50 hover:shadow-lg hover:shadow-[0_0_20px] hover:text-gray-200 transition-all duration-300" 
-  
-    const links = [
-        {name: "home", path:"/"},
-        {name:"about", path:"/about"},
-        {name:"contact", path:"/contact"}
-    ];
-    return( 
-        <> 
-       
-        <div className=" w-90% sm:w-full shadow-[0_0_20px] h-16 bg-[linear-gradient(-20deg,#274DF5,#27EEF5,#076969)] bg-[length:200%_200%] animate-[gradient_2s_ease_infinite"> 
-     <div className="mr-20 flex gap-8 justify-end  "> 
-        {links.map((l)=>( 
-            <Link 
-            key={l.path}
-            to={l.path} className={`
-             mt-3  text-gray text-xl p-1 rounded 
-             ${linkStyle}`}>
-                
-                {l.name} </Link>
+export function Navbar() {
 
-        ))}
+  const linkStyle = `
+    relative
+    px-4
+    py-2
+    text-white
+    text-base
+    sm:text-lg
+    font-semibold
+    rounded-lg
+
+    hover:bg-white/20
+    hover:text-white
+
+    hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+  `
+
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" }
+  ]
+
+  return (
+    <>
+      <div className="
+        sticky
+        top-0
+        z-50
+        w-full
+        h-16
+
+        bg-gradient-to-r
+        from-blue-700
+        via-blue-500
+        to-cyan-500
+
+        bg-[length:200%_200%]
+        animate-[gradient_4s_ease_infinite]
+
+        shadow-[0_4px_25px_rgba(37,99,235,0.35)]
+      ">
+
+        <div className="
+          h-full
+          max-w-[1200px]
+          mx-auto
+          px-4
+          sm:px-8
+
+          flex
+          items-center
+          justify-between
+        ">
+
+          <Link
+            to="/"
+            className="
+              text-white
+              text-xl
+              sm:text-2xl
+              font-extrabold
+              tracking-wide
+              hover:text-cyan-100
+              transition-all
+              duration-300
+            "
+          >
+            Angel Rose
+          </Link>
+
+          <div className="
+            flex
+            items-center
+            gap-2
+            sm:gap-5
+          ">
+
+            {links.map((l) => (
+
+              <Link
+                key={l.path}
+                to={l.path}
+                className={linkStyle}
+              >
+                {l.name}
+              </Link>
+
+            ))}
+
+          </div>
+
         </div>
-     
-     
-     
-        </div>
-         </>
-    )
+
+      </div>
+    </>
+  )
 }

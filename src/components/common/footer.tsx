@@ -1,19 +1,34 @@
-
 export function Footer() {
   return (
     <footer className="
-    mt-20
-      fixed bottom-0 w-full h-16
-      shadow-[0_0_10px]
-      bg-[linear-gradient(-20deg,#274DF5,#27EEF5,#076969)]
+      fixed
+      bottom-0
+      left-0
+      z-50
+      w-full
+      min-h-16
+
+      bg-gradient-to-r
+      from-blue-700
+      via-blue-500
+      to-cyan-500
+
       bg-[length:200%_200%]
-      animate-[gradient_2s_ease_infinite]
+      animate-[gradient_4s_ease_infinite]
+
+      shadow-[0_-4px_25px_rgba(37,99,235,0.35)]
+
+      px-4
+      py-3
     ">
+
       <div className="
-        max-w-6xl mx-auto
-        h-full
-        px-4
-        flex flex-col
+        max-w-[1200px]
+        mx-auto
+        min-h-10
+
+        flex
+        flex-col
         justify-center
         items-center
         text-center
@@ -21,24 +36,31 @@ export function Footer() {
 
         sm:flex-row
         sm:justify-between
-        sm:gap-0
-        sm:text-sm
-
-        md:px-6
-        md:text-base
-
-        lg:px-8
-        lg:text-lg
+        sm:gap-4
       ">
-        <p className="text-white">
-          © 2026 Kirby Tajanlangit
+
+        <p className="
+          text-white
+          text-xs
+          sm:text-sm
+          md:text-base
+          font-medium
+        ">
+          © 2026 Angel Rose Pogoy
         </p>
 
-        <p className="text-white">
+        <p className="
+          text-white
+          text-xs
+          sm:text-sm
+          md:text-base
+          font-medium
+        ">
           BSIT 3-D | Cordova Public College
         </p>
+
       </div>
+
     </footer>
   )
 }
-
