@@ -264,7 +264,7 @@ export function HomeSectiom() {
                 leading-8
               "
             >
-              I am Erica Sobiono, a Bachelor of Science in
+              I am Shan, a Bachelor of Science in
               Information Technology student at Cordova Public
               College. I enjoy learning about technology,
               building websites, and turning ideas into
